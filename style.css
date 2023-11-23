@@ -39,7 +39,8 @@ a:hover{color:white;font-weight:bold;}
     display:flex;
     justify-content:space-between;
     align-items:center;
-    flex-wrap:no-wrap;}
+    flex-wrap:no-wrap;
+    margin-bottom:-10;}
 
 .directory{display:flex;
     padding-left:20px;
@@ -65,3 +66,4 @@ h2{text-align: center;color:red;text-shadow: 2px 2px black;}
 h3{text-align:center;color:red;text-shadow: 2px 2px black;}
 p{text-align:center;padding-bottom:20px;}
 .slogan{color:red;font-weight:bold;font-size:1.3rem;}
+.info{padding-bottom:0px;}
