@@ -1,69 +1,104 @@
-@font-face {
-    font-family:Battle Continuez;
-    src: url(https://raw.githubusercontent.com/GrandioseBehavior/asset/main/TheBattleContinuez-vAVA.ttf);
-}
-@font-face {
-    font-family: Ace Sans;
-    src: url(https://raw.githubusercontent.com/GrandioseBehavior/asset/main/AceSansFree-2O2LX.otf);
-}
+@font-face 
+{font-family:Battle Continuez; src: url(https://raw.githubusercontent.com/GrandioseBehavior/asset/main/TheBattleContinuez-vAVA.ttf);}
 
-body { 
-    background: url(https://64.media.tumblr.com/f4fdd4e697db35fa3237f17650f266f0/tumblr_msj9kldifz1rmxmv3o1_400.gifv) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color:black;
-    font-family: Ace Sans;
-  }
+@font-face 
+{font-family: Ace Sans; src: url(https://raw.githubusercontent.com/GrandioseBehavior/asset/main/AceSansFree-2O2LX.otf);}
 
-nav{background-color:black;padding-left:50px;height:50px;top:0;left:0;right:0;position:fixed;z-index:1;display:flex;justify-content:space-evenly;align-items:center;}
+body 
+{background: url(https://64.media.tumblr.com/f4fdd4e697db35fa3237f17650f266f0/tumblr_msj9kldifz1rmxmv3o1_400.gifv) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color:black;font-family: Ace Sans;font-size:14px;}
 
-a{color:red;text-decoration:none;font-weight:bold;}
+nav
+{background-color:black;padding-left:50px;height:50px;top:0;left:0;right:0;position:fixed;z-index:1;display:flex;justify-content:space-evenly;align-items:center;}
 
-a:hover{color:white;font-weight:bold;}
+a
+{color:red;text-decoration:none;font-weight:bold;}
 
-.webpage{background-color:rgb(225,225,225,.5);width:70%;margin-left:auto;margin-right:auto;backdrop-filter: blur( 10px );border-left: 2px solid red;border-right: 2px solid red;margin-bottom:-10;}
+a:hover
+{color:white;font-weight:bold;}
 
-.title{width:100%;margin-left:auto;margin-right:auto;padding-top:50px;padding-bottom:10px;background-color:rgb(0,0,0, .9);backdrop-filter: blue (10px);}
+.webpage
+{background-color:rgb(225,225,225,.5);width:70%;margin-left:auto;margin-right:auto;backdrop-filter: blur( 10px );border-left: 2px solid red;border-right: 2px solid red;margin-bottom:-10;}
 
-.content{width:80%;margin-left:auto;margin-right:auto;padding-bottom:30px;padding-top:20px;}
+.title
+{width:100%;margin-left:auto;margin-right:auto;padding-top:50px;padding-bottom:10px;background-color:rgb(0,0,0, .9);backdrop-filter: blue (10px);}
 
-.footer{width:100%;
-    background-color:rgb(0,0,0, .9);
-    backdrop-filter: blue (10px);
-    padding-top:25px;
-    overflow:hidden;
-    height:30px;
-    padding-bottom:25px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:no-wrap;
-    margin-bottom:-10;}
+.content
+{width:80%;margin-left:auto;margin-right:auto;padding-bottom:30px;padding-top:20px;}
 
-.directory{display:flex;
-    padding-left:20px;
-    padding-right:20px;
-    line-height:.5rem;
-    text-align:right;
-    font-size:.7rem;
-flex-direction:column;
-justify-content:center;
-align-items:flex-end}
+.footer
+{width:100%;background-color:rgb(0,0,0, .9);backdrop-filter: blue (10px);padding-top:25px;overflow:hidden;height:30px;padding-bottom:25px;display:flex;justify-content:space-between;align-items:center;flex-wrap:no-wrap;margin-bottom:-10;}
 
-.social{padding-left:20px; 
-    padding-right:20px;
-    text-align:center;
-    overflow:hidden;
-    display:flex;
-    flex-direction:row;;
-    align-items:center;}
+.directory
+{display:flex;padding-left:20px;padding-right:20px;line-height:.5rem;text-align:right;font-size:.7rem;flex-direction:column;justify-content:center;align-items:flex-end}
+
+.social
+{padding-left:20px;padding-right:20px;text-align:center; overflow:hidden;display:flex;flex-direction:row;align-items:center;}
+
+.note{background-color:rgb(0,0,0,.7);color:white;padding:15px;border-radius:30px;font-size:.7rem;width:60%;margin-right:auto;margin-left:auto;margin-top:30px;margin-bottom:40px;box-shadow: 0px 0px 20px red;overflow:hidden;}
+
+.disclaimer
+{background-color:rgb(0,0,0,.7);color:white;padding:15px;border-radius:50px; font-size:.7rem;font-weight:bold;width:70%;margin-top:50px}
+
+.limW 
+{display: block;max-width: 640px;margin-top:0px;margin-bottom:30px}
+
+.limH 
+{display: block;max-width: 100px;margin: 0 auto;}
 
 h1{text-align:center;font-family:Battle Continuez;font-size:3rem;color:white;}
-h1 > b{color:red;text-shadow: 1px 1px #fff;}
-h2{text-align: center;color:red;text-shadow: 2px 2px black;}
-h3{text-align:center;color:red;text-shadow: 2px 2px black;}
-p{text-align:center;padding-bottom:20px;}
-.slogan{color:red;font-weight:bold;font-size:1.3rem;}
-.info{padding-bottom:0px;}
+
+h1 > b
+{color:red;text-shadow: 1px 1px #fff;}
+
+h2
+{text-align: center;color:red;text-shadow: 2px 2px black;}
+
+h3
+{text-align:center;color:red;text-shadow: 2px 2px black;}
+
+p
+{text-align:center;}
+
+.slogan
+{color:red;font-weight:bold;font-size:1.3rem;}
+
+.info
+{padding-bottom:0px;}
+
+b 
+{color:red;}
+
+#result 
+{text-align: center;}
+
+button 
+{display: block;width: calc(100% - 1.5rem);font-family: Jura, sans-serif;font-size: 1rem;font-weight: 900;margin-left:auto;margin-right:auto;border: none;padding: 0.25rem;outline: 3px solid red;border-radius: 10px;background: black;color:white;margin-top:30px;margin-bottom:25px;}
+
+button:hover
+{background-color:red;outline: 3px solid black;}
+
+#outcome 
+{display: block;overflow: hidden;height: auto;}
+
+#cards 
+{display: block;font-size: 0;text-align: center;overflow: hidden;}
+
+.card 
+{position:relative;font-size: 1rem;display: inline-block;
+width: 280px;background: black; border: 1px solid rgba(255,255,25, 0.5);padding-bottom: 3rem;color:white;}
+
+.limW .card 
+{ width: 33%;margin: 0;border: 0;padding-bottom: 2rem;}
+
+.cardWrap 
+{width: 100%;padding-top:none;padding-bottom: 175%;position: relative;object-fit: contain;background-size: contain;}
+
+.cardImg 
+{position: absolute;height: 553px;top: 0;left: 0;right: 0;bottom: 0;background-size: contain;background-image: url(https://raw.githubusercontent.com/GrandioseBehavior/tarot-tester/main/CT1.png);background-repeat: no-repeat;}
+
+.cardImg.reverse 
+{position: absolute;transform: rotate(-180deg); height:100%;object-fit:contain;background-size: contain;
+}
+
+.cardName 
+{font-weight:bold;width: 100%;height:3rem;font-size: 1rem; line-height:2.5rem;position: absolute;bottom: -3rem;}
