@@ -1,6 +1,6 @@
+/* Imported Font */
 @font-face 
 {font-family: Davis; src: url(https://raw.githubusercontent.com/GrandioseBehavior/asset/main/Davis-0Wev.ttf);}
-
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap');
 
 /* main document styling */
@@ -8,9 +8,23 @@ body
 {background: url(https://64.media.tumblr.com/f4fdd4e697db35fa3237f17650f266f0/tumblr_msj9kldifz1rmxmv3o1_400.gifv) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color:black;font-family:'Red Hat Display', sans-serif;font-size:16px;margin:0;}
 .webpage
 {background-color:rgb(225,225,225,.5);width:70%;margin-left:auto;margin-right:auto;backdrop-filter: blur( 10px );border-left: 2px solid red;border-right: 2px solid red;}
+
+/* URL styling */
 .navbar
 {background-color:rgb(0,0,0,.8);padding-left:50px;height:50px;top:0;left:0;right:0;position:fixed;z-index:1;display:flex;justify-content:space-evenly;align-items:center;border-bottom: 2px solid red}
-.navbar > a {font-size:1rem;text-transform:uppercase;}
+.navbar > a {color:red;text-decoration:none;font-weight:bold;text-transform:uppercase;font-size:1rem;} 
+.navbar > a:hover
+{color:white;font-weight:bold;box-shadow: 0px 0px 20px 5px rgb(255,0,0,.5);background-color:rgb(255,0,0,.3)}
+.directory
+{display:flex;padding-left:20px;padding-right:20px;line-height:.5rem;text-align:right;font-size:.7rem;flex-direction:column;justify-content:center;align-items:flex-end}
+.directory > a
+{color:red;text-decoration:none;font-weight:bold;text-transform:uppercase;} 
+.directory > a:hover
+{color:white;font-weight:bold;box-shadow: 0px 0px 20px 5px rgb(255,0,0,.5);background-color:rgb(255,0,0,.3)}
+a
+{color:red;text-decoration:none;font-weight:bold;text-transform:uppercase;} 
+
+/* Page Subsections styling */
 .title
 {width:100%;margin-left:auto;margin-right:auto;padding-top:30px;background-color:rgb(0,0,0, .8);backdrop-filter: blur (5px);}
 .content
@@ -24,13 +38,7 @@ overflow:hidden;
 height:30px;
 padding-bottom:25px;display:flex;justify-content:space-between;align-items:center;border-top: 2px solid red;}
 
-/* text styling */
-a
-{color:red;text-decoration:none;font-weight:bold;text-transform:uppercase;} 
-.directory > a:hover
-{color:white;font-weight:bold;box-shadow: 0px 0px 20px 5px rgb(255,0,0,.5);background-color:rgb(255,0,0,.3)}
-.navbar > a:hover
-{color:white;font-weight:bold;box-shadow: 0px 0px 20px 5px rgb(255,0,0,.5);background-color:rgb(255,0,0,.3)}
+/* Markdown styling */
 h1
 {text-align:center;font-family:Davis;font-size:4rem;color:white;margin-bottom:10px;font-weight:bold;padding-top:20px;}
 h1 > b
@@ -53,9 +61,7 @@ button:hover
 .limH 
 {display: block;max-width: 100px;margin: 0 auto;}
 
-/* div styling */
-.directory
-{display:flex;padding-left:20px;padding-right:20px;line-height:.5rem;text-align:right;font-size:.7rem;flex-direction:column;justify-content:center;align-items:flex-end}
+/* Section components styling */
 .social
 {padding-left:20px;padding-right:20px;text-align:center; overflow:hidden;display:flex;flex-direction:row;align-items:center;}
 .notetip{width:100%; text-align:center;height:20px;margin-bottom:0;}
@@ -73,38 +79,28 @@ button:hover
 {padding-bottom:0px;}
 .past{height:auto;position:relative;margin-left:auto;margin-right:auto;width:100%;padding-bottom:10px;padding-top:5px;}
 
-/* tarot card outermost div and it's contents */
+/* Tarot Game styling */
 .limW 
 {font-size:0px;position:relative;margin-left:auto;margin-right:auto;height:auto;width:60%;margin-top:0;}
-
 #result 
 {text-align: center;}
-
-/*no touch*/
 #cards 
 {display: block;font-size: 0;text-align: center;overflow:hidden;width:100%;padding:0;margin:0;background: rgb(0,0,0,.7);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-right-radius:5px;border-top-left-radius:5px;}
-
 #outcome{margin-top:0;margin-bottom:20px;}
 .card 
 {position:relative;display: inline-block;color:white;}
-
 .limW .card 
 {width:33.3%;margin: 0;border: 0;padding-bottom:3rem;}
-
 .cardWrap 
 {padding-top:none;padding-bottom: 175%;position: inherit;object-fit: contain;background-size: contain;width:100%;}
-
-/*no touch*/
 .cardImg 
 {position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-size: cover;background-image: url(https://raw.githubusercontent.com/GrandioseBehavior/seekerglob/main/imgs/tarot_cards_back-1.png);background-repeat: no-repeat;max-width:200px;}
-
 .cardImg.reverse 
 {position: absolute;transform: rotate(-180deg); width:100%;object-fit:cover;}
-
-/*no touch*/
 .cardName 
 {font-weight:bold;width:80%;height:5.5rem;line-height:.7rem;position: absolute;bottom: -4.2rem;font-size:.8rem;display:flex;flex-direction:column;justify-content:center;align-items:center;color:red;text-shadow: .5px .5px #fff;padding-left:15px; padding-right:15px;}
 
+/* Animation */
 @keyframes shadow {
   50% {box-shadow: 0px 0px 15px 10px rgb(0,0,0,1);border: 3px solid rgb(0,0,0,.7);background-color:rgb(0,0,0);}}
   @keyframes shadow2 {
