@@ -21,8 +21,11 @@ body
 {color:red;text-decoration:none;font-weight:bold;text-transform:uppercase;} 
 .directory > a:hover
 {color:white;font-weight:bold;box-shadow: 0px 0px 20px 5px rgb(255,0,0,.5);background-color:rgb(255,0,0,.3)}
-a
+.info > a
 {color:red;text-decoration:none;font-weight:bold;text-transform:uppercase;} 
+.info > a:hover 
+{color:white;font-weight:bold;box-shadow: 0px 0px 20px 5px rgb(255,0,0,.5);background-color:rgb(255,0,0,.3)}
+
 
 /* Page Subsections styling */
 .title
