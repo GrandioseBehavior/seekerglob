@@ -64,7 +64,7 @@ button:hover
 .tooltip {visibility: visible;box-shadow: 0px 0px 25px 10px rgb(255,0,0);}
 .disclaimer
 {background-color:rgb(0,0,0,.6);color:white;padding-top:15px; padding-bottom:15px;font-size:.7rem;font-weight:bold;width:100%;margin-top:35px;font-weight:100;line-height:.8rem;}
-.box{max-width:350px;}
+.box{padding-left:35px;padding-right:35px;}
 .slogan
 {color:white;font-size:1rem;padding-bottom:40px;margin:0;text-transform:uppercase;padding-top:15px;}
 .info
