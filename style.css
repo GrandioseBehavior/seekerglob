@@ -8,9 +8,9 @@ body
 {background: url(https://64.media.tumblr.com/f4fdd4e697db35fa3237f17650f266f0/tumblr_msj9kldifz1rmxmv3o1_400.gifv) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color:black;font-family:'Red Hat Display', sans-serif;font-size:16px;margin:0;}
 .webpage
 {background-color:rgb(225,225,225,.5);width:70%;margin-left:auto;margin-right:auto;backdrop-filter: blur( 10px );border-left: 2px solid red;border-right: 2px solid red;}
-nav
+.navbar
 {background-color:rgb(0,0,0,.8);padding-left:50px;height:50px;top:0;left:0;right:0;position:fixed;z-index:1;display:flex;justify-content:space-evenly;align-items:center;border-bottom: 2px solid red}
-nav > a {font-size:1rem;text-transform:uppercase;}
+.navbar > a {font-size:1rem;text-transform:uppercase;}
 .title
 {width:100%;margin-left:auto;margin-right:auto;padding-top:30px;background-color:rgb(0,0,0, .8);backdrop-filter: blur (5px);}
 .content
