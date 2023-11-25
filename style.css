@@ -1,35 +1,43 @@
 @font-face 
-{font-family:Battle Continuez; src: url(https://raw.githubusercontent.com/GrandioseBehavior/asset/main/TheBattleContinuez-vAVA.ttf);}
-@font-face 
-{font-family: Ace Sans; src: url(https://raw.githubusercontent.com/GrandioseBehavior/asset/main/AceSansFree-2O2LX.otf);}
+{font-family: Davis; src: url(https://raw.githubusercontent.com/GrandioseBehavior/asset/main/Davis-0Wev.ttf);}
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&display=swap');
 
 /* main document styling */
 body 
-{background: url(https://64.media.tumblr.com/f4fdd4e697db35fa3237f17650f266f0/tumblr_msj9kldifz1rmxmv3o1_400.gifv) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color:black;font-family: Ace Sans;font-size:14px;}
+{background: url(https://64.media.tumblr.com/f4fdd4e697db35fa3237f17650f266f0/tumblr_msj9kldifz1rmxmv3o1_400.gifv) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;color:black;font-family:'Red Hat Display', sans-serif;font-size:14px;margin:0;}
 .webpage
-{background-color:rgb(225,225,225,.5);width:70%;margin-left:auto;margin-right:auto;backdrop-filter: blur( 10px );border-left: 2px solid red;border-right: 2px solid red;margin-bottom:-10;}
+{background-color:rgb(225,225,225,.5);width:70%;margin-left:auto;margin-right:auto;backdrop-filter: blur( 10px );border-left: 2px solid red;border-right: 2px solid red;}
 nav
-{background-color:black;padding-left:50px;height:50px;top:0;left:0;right:0;position:fixed;z-index:1;display:flex;justify-content:space-evenly;align-items:center;}
+{background-color:rgb(0,0,0,.8);padding-left:50px;height:50px;top:0;left:0;right:0;position:fixed;z-index:1;display:flex;justify-content:space-evenly;align-items:center;}
+nav > a {font-size:1rem;text-transform:uppercase;}
 .title
-{width:100%;margin-left:auto;margin-right:auto;padding-top:50px;padding-bottom:10px;background-color:rgb(0,0,0, .9);backdrop-filter: blue (10px);}
+{width:100%;margin-left:auto;margin-right:auto;padding-top:30px;background-color:rgb(0,0,0, .8);backdrop-filter: blur (5px);}
 .content
-{width:100%;margin-left:auto;margin-right:auto;padding-bottom:30px;padding-top:20px;}
+{width:100%;margin-left:auto;margin-right:auto;}
 .footer
-{width:100%;background-color:rgb(0,0,0, .9);backdrop-filter: blue (10px);padding-top:25px;overflow:hidden;height:30px;padding-bottom:25px;display:flex;justify-content:space-between;align-items:center;flex-wrap:no-wrap;margin-bottom:-10;}
+{width:100%;
+background-color:rgb(0,0,0, .8);
+backdrop-filter: blue (10px);
+padding-top:25px;
+overflow:hidden;
+height:30px;
+padding-bottom:25px;display:flex;justify-content:space-between;align-items:center;border-top: 2px solid red;}
 
 /* text styling */
 a
-{color:red;text-decoration:none;font-weight:bold;}
+{color:red;text-decoration:none;font-weight:bold;text-transform:uppercase;} 
 a:hover
-{color:white;font-weight:bold;}
+{color:white;font-weight:bold;box-shadow: 0px 0px 20px 5px rgb(255,0,0,.5);background-color:rgb(255,0,0,.3)}
 h1
-{text-align:center;font-family:Battle Continuez;font-size:3rem;color:white;}
+{text-align:center;font-family:Davis;font-size:4rem;color:white;margin-bottom:10px;font-weight:bold;padding-top:20px;}
 h1 > b
 {color:red;text-shadow: 1px 1px #fff;}
 h2
-{text-align: center;color:red;text-shadow: 2px 2px black;}
+{text-align: center;color:white;text-shadow: 3px 3px black;font-size:2rem;background-color:rgb(255,0,0);padding-top:10px;padding-bottom:10px;margin-top:0;font-family:Davis;}
 h3
-{text-align:center;color:red;text-shadow: 2px 2px black;}
+{text-align:center;color:red;text-shadow: 1px 1px black;font-weight:bold;font-size:.7rem;text-transform:uppercase;margin-bottom:5px;letter-spacing:.1rem;max-width:300px;display:block;overflow:hidden;}
+h4{font-size:.5rem;padding-bottom:0;padding-top:15px;}
 p
 {text-align:center;}
 b 
@@ -37,11 +45,9 @@ b
 
 /* button styling */
 button 
-{display: block;width: calc(100% - 1.5rem);font-family: Jura, sans-serif;font-size: 1rem;font-weight: 900;margin-left:auto;margin-right:auto;border: none;padding: 0.25rem;outline: 3px solid red;border-radius: 10px;background: black;color:white;margin-top:30px;margin-bottom:25px;}
+{display: block;width: calc(100% - 1.5rem);font-family: Ace Sans;font-size: 1rem;font-weight: 900;margin-left:auto;margin-right:auto;padding: 0.25rem;border: 3px solid red;border-radius: 10px;background: red;color:white;box-shadow: 0px 0px 15px 10px red;margin-top:10px; margin-bottom:20px;animation: shadow 3s infinite;}
 button:hover
-{background-color:red;outline: 3px solid black;}
-
-/*button div*/
+{background-color:red;border: 3px solid black;box-shadow: 0px 0px 20px 10px white;animation: shadow2 3s infinite;}
 .limH 
 {display: block;max-width: 100px;margin: 0 auto;}
 
@@ -50,41 +56,55 @@ button:hover
 {display:flex;padding-left:20px;padding-right:20px;line-height:.5rem;text-align:right;font-size:.7rem;flex-direction:column;justify-content:center;align-items:flex-end}
 .social
 {padding-left:20px;padding-right:20px;text-align:center; overflow:hidden;display:flex;flex-direction:row;align-items:center;}
-.note{background-color:rgb(0,0,0,.7);color:white;padding:15px;border-radius:30px;font-size:.7rem;width:60%;margin-right:auto;margin-left:auto;margin-top:30px;margin-bottom:40px;box-shadow: 0px 0px 20px red;overflow:hidden;}
+.notetip{width:100%; text-align:center;height:20px;margin-bottom:0;}
+.note {color:white;font-size:.7rem;width:5%;margin-left:auto;margin-righT:auto;border-radius:10px;height:15px;display:flex;justify-content:center;align-items:center;box-shadow: 0 0 10px 10px red;}
+.note .tooltip {visibility: hidden;width: 175px;background-color: rgb(0,0,0,.8);color: #fff;text-align: center;padding: 5px;border-radius: 20px;margin-left:-3px;margin-top:50px;font-size:.9rem;line-height:.8rem;}
+.tooltip{position: absolute;z-index: 1;}
+.note:hover 
+.tooltip {visibility: visible;box-shadow: 0px 0px 25px 10px rgb(255,0,0);}
 .disclaimer
-{background-color:rgb(0,0,0,.7);color:white;padding:15px;border-radius:50px; font-size:.7rem;font-weight:bold;width:70%;margin-top:50px}
+{background-color:rgb(0,0,0,.6);color:white;padding-top:10px; padding-bottom:10px;font-size:.7rem;font-weight:bold;width:100%;margin-top:35px;font-weight:100;line-height:.8rem;}
+.box{max-width:350px;}
 .slogan
-{color:red;font-weight:bold;font-size:1.3rem;}
+{color:white;font-size:1rem;padding-bottom:40px;margin:0;text-transform:uppercase;padding-top:15px;}
 .info
 {padding-bottom:0px;}
+.past{height:auto;position:relative;margin-left:auto;margin-right:auto;width:100%;padding-bottom:10px;padding-top:5px;}
 
 /* tarot card outermost div and it's contents */
 .limW 
-{display: block;width: 90%;margin-top:0px;font-size:0px;position:relative;margin-left:auto;margin-right:auto;}
+{font-size:0px;position:relative;margin-left:auto;margin-right:auto;height:auto;width:60%;margin-top:0;}
 
 #result 
 {text-align: center;}
-#outcome 
-{display: block;overflow: hidden;height: auto;}
 
+/*no touch*/
 #cards 
-{display: block;font-size: 0;text-align: center;overflow:hidden;margin-left:auto;margin-right:auto;height:90%;width:100%;}
+{display: block;font-size: 0;text-align: center;overflow:hidden;width:100%;padding:0;margin:0;background: rgb(0,0,0,.7);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-right-radius:5px;border-top-left-radius:5px;}
 
+#outcome{margin-top:0;margin-bottom:20px;}
 .card 
-{position:relative;display: inline-block;width:100%;background: rgb(0,0,0,.7);padding-bottom: 3rem;color:white;height:95%;}
+{position:relative;display: inline-block;color:white;}
 
 .limW .card 
-{ width: 33%;margin: 0;border: 0;padding-bottom:2rem;}
+{width:33.3%;margin: 0;border: 0;padding-bottom:3rem;}
 
 .cardWrap 
-{width: 100%;padding-top:none;padding-bottom: 180%;position: relative;object-fit: contain;background-size: contain;height:95%;}
+{padding-top:none;padding-bottom: 175%;position: inherit;object-fit: contain;background-size: contain;width:100%;}
 
+/*no touch*/
 .cardImg 
-{position: absolute;height:100%;top: 0;left: 0;right: 0;bottom: 0;background-size: contain;background-image: url(https://raw.githubusercontent.com/GrandioseBehavior/seekerglob/main/imgs/tarot_cards_back-1.png);background-repeat: no-repeat;}
+{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-size: cover;background-image: url(https://raw.githubusercontent.com/GrandioseBehavior/seekerglob/main/imgs/tarot_cards_back-1.png);background-repeat: no-repeat;max-width:200px;}
 
 .cardImg.reverse 
-{position: absolute;transform: rotate(-180deg); height:98.3%;object-fit:contain;background-size: contain;}
+{position: absolute;transform: rotate(-180deg); width:100%;object-fit:cover;}
 
+/*no touch*/
 .cardName 
-{font-weight:bold;width:100%;height:4rem;line-height:.6rem;position: absolute;bottom: -3rem;font-size:.7rem;padding-left:5px;display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;color:red;text-shadow: .5px .5px #fff;}
+{font-weight:bold;width:80%;height:5.5rem;line-height:.7rem;position: absolute;bottom: -4.2rem;font-size:.8rem;display:flex;flex-direction:column;justify-content:center;align-items:center;color:red;text-shadow: .5px .5px #fff;padding-left:15px; padding-right:15px;}
 
+@keyframes shadow {
+  50% {box-shadow: 0px 0px 15px 10px rgb(0,0,0,1);border: 3px solid rgb(0,0,0,.7);background-color:rgb(0,0,0);}}
+  @keyframes shadow2 {
+  50% {box-shadow: 0px 0px 15px 10px rgb(255,255,255,1);border: 3px solid rgb(0,0,0,.7);background-color:rgb(0,0,0);}}
+  
