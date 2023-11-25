@@ -1,15 +1,15 @@
 <!DOCTYPE html> 
-<html>
+<html lang="en">
         <main>
  <link rel="stylesheet" href="style.css">
  <title>Seeker of Cups</title>           
  <nav>
-    <a href="/seekerglob/">Home</a>
+    <a href="/home">Home</a>
     <a href="/seekerglob/reading">Virtual Reading</a>
     <a href="/seekerglob/contact">Contact</a>
  </nav>
  <script>
-    const cardPre = "https://raw.githubusercontent.com/GrandioseBehavior/seekerglob/imgs/";
+    const cardPre = "https://raw.githubusercontent.com/GrandioseBehavior/seekerglob/main/imgs/";
 const cardImg = [
 "fool.png",
 "magician.png",
@@ -37,10 +37,10 @@ const cardImg = [
 const cardStr = [
 "Fool",
 "Magician",
-"Popess",
+"High Priestess",
 "Empress",
 "Emperor",
-"Pope",
+"Hierophant",
 "Lovers",
 "Chariot",
 "Strength",
@@ -125,19 +125,18 @@ document.getElementById("result").classList.add("limW");
             <div class="webpage">
             <div class="title">
             <h1><b>Seeker</b> of Cups</h1>
-            <i><p class="slogan">Slogan/Motto/etc.</p></i>
+            <p class="slogan">Slogan/Motto/etc.</p>
             </div>
             <div class="content">
             <h2> Virtual Reading</h2>
-            <h3>Past | Present | Future</h3>
-            <p class="note"><b>Note:</b> This deck consists of just the Majors and will display upright and reversed.</p>
+             <div class="notetip">
+            <div class="note"><img src="https://cdn3.iconfinder.com/data/icons/budicon-chroma-communication/24/chat-bubble-alert-512.png" width=20px>
+            <span class="tooltip">This deck consists of just the Majors and will display upright and reversed.</span></div>
+  </div>
+ <h3 class="past">Past | Present | Future</h3>    
 
-            <div class="limH">
-            <button type="button" onClick="genCards()">DRAW</button>
-            </div>
-    
+           
             <div id="result" class="limW">
-                <h3 id="outcome"></h3>
             <div id="cards">
             <div class="card">
             <div class="cardWrap">
@@ -148,22 +147,29 @@ document.getElementById("result").classList.add("limW");
             <div class="card">
             <div class="cardWrap">
             <div class="cardImg"></div>
-            <div class="cardName">
-    ?       </div>
+            <div class="cardName">?</div>
             </div>
             </div>
             <div class="card">
           <div class="cardWrap">
             <div class="cardImg"></div>
-            <div class="cardName">
-    ?        </div>
+            <div class="cardName">?</div>
           </div>
         </div>
       </div>
+      <h4 id="outcome"></h4>
     </div>
+       <div class="limH">
+            <button type="button" onClick="genCards()">DRAW</button>
+            </div>
     <center>
-    <p class="disclaimer"><b>Disclaimer</b><br><br>This is only intended as a game. Please do not take your reading as a indefinite representation of your fortune.</p>
+    <div class="disclaimer">
+    <div class="box">
+    
+
+    <b>Disclaimer</b><br>This is only intended as a game. Please do not take your reading as a indefinite representation of your fortune.To have your fortune read, please visit the contact page to book your reading.</div>
     </center>
+        </div>
     </div>
         <div class="footer">
             <div class="social">
@@ -172,7 +178,7 @@ document.getElementById("result").classList.add("limW");
                 <a href="https://reddit.com" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_reddit-1024.png" width=30px></a>
             </div>
             <div class="directory">
-        <a href="/seekerglob/">Home</a><br>
+        <a href="/home">Home</a><br>
         <a href="/seekerglob/reading">Virtual Reading</a><br>
         <a href="/seekerglob/contact">Contact</a>
             </div>
