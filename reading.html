@@ -1,185 +1,174 @@
 <!DOCTYPE html> 
-<html lang="en">
-          <head>    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-        <main>
- <link rel="stylesheet" href="style.css">
- <title>Seeker of Cups</title>           
- <nav class="navbar">
-         <a href="/seekerglob/">Home</a>
-    <a href="/seekerglob/reading">Virtual Reading</a>
-    <a href="/seekerglob/contact">Book</a>
- </nav>
- <script>
-    const cardPre = "https://raw.githubusercontent.com/GrandioseBehavior/seekerglob/main/imgs/";
-const cardImg = [
-"fool.png",
-"magician.png",
-"popess.png",
-"empress.png",
-"emperor.png",
-"pope.png",
-"lovers.png",
-"chariot.png",
-"strength.png",
-"hermit.png",
-"wheel.png",
-"justice.png",
-"hangman.png",
-"death.png",
-"temperance.png",
-"devil.png",
-"tower.png",
-"star.png",
-"moon.png",
-"sun.png",
-"judgement.png",
-"world.png"
-];
-const cardStr = [
-"Fool",
-"Magician",
-"High Priestess",
-"Empress",
-"Emperor",
-"Hierophant",
-"Lovers",
-"Chariot",
-"Strength",
-"Hermit",
-"Wheel of Fortune",
-"Justice",
-"Hanged Man",
-"Death",
-"Temperance",
-"Devil",
-"Tower",
-"Star",
-"Moon",
-"Sun",
-"Judgment",
-"World"
-];
-const oriStr = [" (Upright)", " (Reverse)"];
-
-var genCards = () => {
-// There are 73920 combinations of 3 of 22*2 (for orientation) tarot cards
-// The smallest power of 2 larger than that is 131,072 or Math.pow(2,17). JS can do ints up to Math.pow(2,53), so we're safe.
-document.getElementById("result").classList.remove("hidden");
-var outcome = 0;
-while (true) {
-outcome = Math.floor(Math.pow(2,17) * Math.random());
-console.log(outcome);
-if (outcome < 73920) {
-break;
-}
-}
-
-document.getElementById("outcome").innerText = "Result #" + outcome;
-
-var cards = [0, 0, 0, 0, 0, 0];
-for (var i = 0; i < 3; i++) {
-cards[i] = outcome % (22 - i);
-outcome = Math.floor(outcome / (22 - i));
-cards[i+3] = outcome % 2;
-outcome = Math.floor(outcome / 2);
-}
-console.log("Preliminary results:", cards);
-// Adjust the results to simulate drawing with replacement.
-// The last two cards must be adjusted according to the other previous draws.
-if (cards[1] >= cards[0]) {
-// The 2nd card should be incremented. Check if the 3rd one needs to be incremented too.
-if (cards[2] >= cards[1]) {
-cards[2] += 2;
-}
-cards[1] ++;
-} else if (cards[2] >= cards[0]) {
-cards[2] ++;
-}
-console.log("Results:", cards);
-updateCardDetails(cards);
-}
-
-var updateCardDetails = cardData => {
-var divs = document.querySelectorAll(".card");
-for (var i = 0; i < 3; i++) {
-var img = divs[i].querySelector(".cardImg");
-img.style.backgroundImage = "url(" + cardPre + cardImg[cardData[i]] + ")";
-if (cardData[i+3]) {
-img.classList.add("reverse");
-} else {
-img.classList.remove("reverse");
-}
-divs[i].querySelector(".cardName").innerText = cardStr[cardData[i]] + oriStr[cardData[i+3]];
-}
-}
-
-var showBig = big => {
-if (big) {
-document.getElementById("result").classList.remove("limW");
-} else {
-document.getElementById("result").classList.add("limW");
-}
-}
-</script>
-    </main>
-        <body>
-            <div class="webpage">
-            <div class="title">
-            <h1><b>Seeker</b> of Cups</h1>
-            <p class="slogan">Slogan/Motto/etc.</p>
+   <html lang="en">
+      <head>    
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <script>
+            const cardPre = "https://raw.githubusercontent.com/GrandioseBehavior/seekerglob/main/imgs/";
+        const cardImg = [
+        "fool.png",
+        "magician.png",
+        "popess.png",
+        "empress.png",
+        "emperor.png",
+        "pope.png",
+        "lovers.png",
+        "chariot.png",
+        "strength.png",
+        "hermit.png",
+        "wheel.png",
+        "justice.png",
+        "hangman.png",
+        "death.png",
+        "temperance.png",
+        "devil.png",
+        "tower.png",
+        "star.png",
+        "moon.png",
+        "sun.png",
+        "judgement.png",
+        "world.png"
+        ];
+        const cardStr = [
+        "Fool",
+        "Magician",
+        "High Priestess",
+        "Empress",
+        "Emperor",
+        "Hierophant",
+        "Lovers",
+        "Chariot",
+        "Strength",
+        "Hermit",
+        "Wheel of Fortune",
+        "Justice",
+        "Hanged Man",
+        "Death",
+        "Temperance",
+        "Devil",
+        "Tower",
+        "Star",
+        "Moon",
+        "Sun",
+        "Judgment",
+        "World"
+        ];
+        const oriStr = [" (Upright)", " (Reverse)"];
+        
+        var genCards = () => {
+        // There are 73920 combinations of 3 of 22*2 (for orientation) tarot cards
+        // The smallest power of 2 larger than that is 131,072 or Math.pow(2,17). JS can do ints up to Math.pow(2,53), so we're safe.
+        document.getElementById("result").classList.remove("hidden");
+        var outcome = 0;
+        while (true) {
+        outcome = Math.floor(Math.pow(2,17) * Math.random());
+        console.log(outcome);
+        if (outcome < 73920) {
+        break;
+        }
+        }
+        
+        document.getElementById("outcome").innerText = "Result #" + outcome;
+        
+        var cards = [0, 0, 0, 0, 0, 0];
+        for (var i = 0; i < 3; i++) {
+        cards[i] = outcome % (22 - i);
+        outcome = Math.floor(outcome / (22 - i));
+        cards[i+3] = outcome % 2;
+        outcome = Math.floor(outcome / 2);
+        }
+        console.log("Preliminary results:", cards);
+        // Adjust the results to simulate drawing with replacement.
+        // The last two cards must be adjusted according to the other previous draws.
+        if (cards[1] >= cards[0]) {
+        // The 2nd card should be incremented. Check if the 3rd one needs to be incremented too.
+        if (cards[2] >= cards[1]) {
+        cards[2] += 2;
+        }
+        cards[1] ++;
+        } else if (cards[2] >= cards[0]) {
+        cards[2] ++;
+        }
+        console.log("Results:", cards);
+        updateCardDetails(cards);
+        }
+        
+        var updateCardDetails = cardData => {
+        var divs = document.querySelectorAll(".card");
+        for (var i = 0; i < 3; i++) {
+        var img = divs[i].querySelector(".cardImg");
+        img.style.backgroundImage = "url(" + cardPre + cardImg[cardData[i]] + ")";
+        if (cardData[i+3]) {
+        img.classList.add("reverse");
+        } else {
+        img.classList.remove("reverse");
+        }
+        divs[i].querySelector(".cardName").innerText = cardStr[cardData[i]] + oriStr[cardData[i+3]];
+        }
+        }
+        
+        var showBig = big => {
+        if (big) {
+        document.getElementById("result").classList.remove("limW");
+        } else {
+        document.getElementById("result").classList.add("limW");
+        }
+        }
+        </script>
+      </head>
+      <main>
+         <link rel="stylesheet" href="style.css">
+         <title>Seeker of Cups</title>           
+         </nav>
+      </main>
+      <body>
+         <div class="webpage">
+            <nav class="navbar">
+               <a href="/seekerglob/">Homepage</a>
+               <a href="/seekerglob/reading">Tarot Game</a>
+            </nav>   
+            <div class="game">
+               <div class="notetip">
+                  <div class="note"><img src="https://cdn3.iconfinder.com/data/icons/budicon-chroma-communication/24/chat-bubble-alert-512.png" width=20px>
+                  <span class="tooltip">This deck consists of just the Majors and will display upright and reversed.</span></div>
+        </div>
+       <h3 class="past">Past | Present | Future</h3>    
+      
+                 
+                  <div id="result" class="limW">
+                  <div id="cards">
+                  <div class="card">
+                  <div class="cardWrap">
+                  <div class="cardImg"></div>
+                  <div class="cardName">?</div>
+                  </div>
+                  </div>
+                  <div class="card">
+                  <div class="cardWrap">
+                  <div class="cardImg"></div>
+                  <div class="cardName">?</div>
+                  </div>
+                  </div>
+                  <div class="card">
+                <div class="cardWrap">
+                  <div class="cardImg"></div>
+                  <div class="cardName">?</div>
+                </div>
+              </div>
             </div>
-            <div class="content">
-            <h2> Virtual Reading</h2>
-             <div class="notetip">
-            <div class="note"><img src="https://cdn3.iconfinder.com/data/icons/budicon-chroma-communication/24/chat-bubble-alert-512.png" width=20px>
-            <span class="tooltip">This deck consists of just the Majors and will display upright and reversed.</span></div>
-  </div>
- <h3 class="past">Past | Present | Future</h3>    
-
-           
-            <div id="result" class="limW">
-            <div id="cards">
-            <div class="card">
-            <div class="cardWrap">
-            <div class="cardImg"></div>
-            <div class="cardName">?</div>
-            </div>
-            </div>
-            <div class="card">
-            <div class="cardWrap">
-            <div class="cardImg"></div>
-            <div class="cardName">?</div>
-            </div>
-            </div>
-            <div class="card">
-          <div class="cardWrap">
-            <div class="cardImg"></div>
-            <div class="cardName">?</div>
+            <h4 id="outcome"></h4>
           </div>
-        </div>
-      </div>
-      <h4 id="outcome"></h4>
-    </div>
-       <div class="limH">
-            <button type="button" onClick="genCards()">DRAW</button>
+             <div class="limH">
+                  <button type="button" onClick="genCards()">DRAW</button>
+                  </div>
             </div>
-    <center>
-    <div class="disclaimer">
-    <div class="box">
-    <b>DISCLAIMER</b><br>
-    <p>This is only intended as a game. Please do not take your reading as a indefinite representation of your fortune.To have your fortune read, please visit the contact page to book your reading.</p></center></div></div>
-        <div class="footer">
-            <div class="social">
-                <a href="https://facebook.com" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/facebook_online_social_media-1024.png" width=30px></a>_
-                <a href="https://instagram.com" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media-1024.png" width=30px></a>_
-                <a href="https://reddit.com" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_reddit-1024.png" width=30px></a>
+            <div class="disclaimer">
+               <div class="box">
+                  <h4>DISCLAIMER</h4>
+                  <p>All readings are of my interpretation and intuition.The outcomes are not fixed and may have undesirable results.</p>
+               </div>
             </div>
-            <div class="directory">
-        <a href="/seekerglob/">Home</a><br>
-        <a href="/seekerglob/reading">Virtual Reading</a><br>
-        <a href="/seekerglob/contact">Book</a>
-            </div>
-        </div>
-    </body>
-</html>
+             
+          
+         </div>
+      </body>
+   </html>
