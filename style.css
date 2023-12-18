@@ -29,6 +29,8 @@ body
 {width:100%;margin-left:auto;margin-right:auto;backdrop-filter: blur (5px);}
 .content
 {width:100%;margin:auto;height:37.5%;}
+.game
+{width:100%;margin:auto;height:40%;margin-top:60px;margin-bottom:165px;}
 
 
 /* Text Styling */
@@ -46,6 +48,7 @@ p
 {text-align:center;padding-left:25px;padding-right:25px;margin-top:0;padding-top:5px;color:white;}
 b 
 {color:red;}
+
 
 
 /* Button styling */
