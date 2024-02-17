@@ -100,3 +100,63 @@ h4 {
 h5 {text-align: center;font-size:.7rem; color:red;text-transform: uppercase;margin:0;padding-top:15px;padding-bottom:5px;}
 h6 {color:white;font-weight:100;font-size:.6rem;text-align:center;margin:0;padding-bottom:15px;}
 
+
+/* Button styling */
+button 
+{display: block;width: calc(100% - 1.5rem);font-family: 'Anonymous Pro', sans-serif;font-size: 1rem;font-weight: 900;margin-left:auto;margin-right:auto;padding: 0.25rem;border: 3px solid rgb(255,0,0,.9);border-radius: 10px;background: red;color:white;box-shadow: 0px 0px 15px 10px red;margin-top:10px; margin-bottom:20px;animation: shadow 3s infinite;}
+button:hover
+{background-color:red;border: 3px solid white;box-shadow: 0px 0px 20px 10px white;animation: shadow2 3s infinite;}
+.limH 
+{display: block;max-width: 100px;margin: 0 auto;}
+/* Section components styling */
+.notetip
+{width:100%; text-align:center;height:20px;margin-bottom:0;}
+.note 
+{color:white;font-size:.7rem;width:20px;margin-left:auto;margin-righT:auto;border-radius:10px;height:15px;display:flex;justify-content:center;align-items:center;background-color:red;box-shadow: 0 0 10px 10px red;}
+.note 
+.tooltip 
+{visibility: hidden;width: 175px;background-color: rgb(0,0,0,.8);color: #fff;text-align: center;padding: 5px;border-radius: 20px;margin-left:-3px;margin-top:50px;font-size:.6rem;line-height:.8rem;}
+.tooltip
+{position: absolute;z-index: 1;}
+.note:hover 
+.tooltip 
+{visibility: visible;box-shadow: 0px 0px 25px 10px rgb(255,0,0);}
+.info
+{padding-bottom:0}
+.past
+{height:auto;position:relative;margin-left:auto;margin-right:auto;width:100%;padding-bottom:10px;padding-top:5px;}
+
+
+
+/* TAROT CARD STYLING */
+.game {
+   width:100%;
+   margin:auto;
+   min-height:50%}
+.limW 
+{font-size:0px;position:relative;margin-left:auto;margin-right:auto;height:auto;width:100%;margin-top:30px;}
+#result 
+{text-align: center;}
+#cards 
+{display: block;font-size: 0;text-align: center;overflow:hidden;width:100%;padding:0;margin:0;background: rgb(0,0,0,.7);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-right-radius:5px;border-top-left-radius:5px;height:200px;}
+#outcome
+{margin-top:20px;margin-bottom:20px;}
+.card 
+{position:relative;display: inline-block;color:white;}
+.limW .card 
+{width:33.3%;margin: 0;border: 0;padding-bottom:3rem;}
+.cardWrap 
+{padding-top:none;padding-bottom: 175%;position: inherit;object-fit: contain;background-size: contain;width:100%;}
+.cardImg 
+{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background-size: cover;background-image: url(https://raw.githubusercontent.com/GrandioseBehavior/seekerglob/main/imgs/tarot_cards_back-1.png);background-repeat: no-repeat;max-width:200px;}
+.cardImg.reverse 
+{position: absolute;transform: rotate(-180deg); width:100%;object-fit:cover;}
+.cardName 
+{font-weight:bold;width:80%;height:5.5rem;line-height:.7rem;position: absolute;bottom: -4.2rem;font-size:.8rem;display:flex;flex-direction:column;justify-content:center;align-items:center;color:red;text-shadow: .5px .5px #fff;padding-left:15px; padding-right:15px;padding-top:10px;padding-bottom:10px;}
+
+
+/* Animation */
+@keyframes shadow 
+{50% {box-shadow: 0px 0px 15px 10px rgb(0,0,0,1);border: 3px solid rgb(0,0,0,.7);background-color:rgb(0,0,0);}}
+@keyframes shadow2 
+{50% {box-shadow: 0px 0px 15px 10px rgb(255,255,255,1);border: 3px solid rgb(255,255,255,.7);background-color:rgb(0,0,0);}}
